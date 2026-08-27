@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://*.trycloudflare.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+  <meta name="theme-color" content="#fffaf0">
+  <title>Family Huddle</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="launcher" aria-live="polite">
+    <section class="card">
+      <div class="mark" aria-hidden="true">🏈</div>
+      <p class="eyebrow">Family fantasy football</p>
+      <h1>Family Huddle</h1>
+      <p id="message" class="message">Finding the family field…</p>
+      <div class="play" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div id="offline" class="offline" hidden>
+        <h2>Game is taking a timeout</h2>
+        <p>The home computer may be restarting or reconnecting. Your league and scores are still safe.</p>
+        <button id="retry" type="button">Try again</button>
+        <p class="automatic">We’ll also retry automatically.</p>
+      </div>
+      <noscript><p class="noscript">Please turn on JavaScript to open the current private game address.</p></noscript>
+    </section>
+    <p class="privacy"><span aria-hidden="true">🔒</span> This public page stores no names, PINs, invitations, or league data.</p>
+  </main>
+</body>
+</html>
